@@ -1,0 +1,4 @@
+Name: Rajendra behera
+Age: 20
+Gender: Male
+isStudent: true
