@@ -21,4 +21,4 @@ const { createFileAndWrite, readFile, addMoreInfoToFile } = require('./functions
 // read file information
 // const data = readFile("index.html")
 
-console.log(data)
+// console.log(data)
