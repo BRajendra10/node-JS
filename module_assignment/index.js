@@ -1,6 +1,5 @@
 // Import all modules
 const { printName } = require("./nameModule.js")
-const { add } = require('./mathModule.js');
 const math = require('./mathModule');
 const { createFileAndWrite, readFile, logMessage, } = require("./fileModule.js");
 const countWords = require('./wordCount.js');
@@ -11,7 +10,7 @@ const checkFileExists = require('./fileCheck');
 // Use all modules together
 printName("Rajendra behera");
 
-console.log('Add (5+3):', add(5, 3));
+console.log('Add (5+3):', math.add(5, 3));
 console.log('Subtract (10-4):', math.subtract(10, 4));
 console.log('Multiply (6*2):', math.multiply(6, 2));
 console.log('Divide (8/2):', math.divide(8, 2));
