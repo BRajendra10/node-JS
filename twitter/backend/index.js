@@ -61,7 +61,7 @@ app.patch("/api/v1/tweet/:tweetId", (req, res) => {
         updatedAt: now
     })
 
-    tweets.push(existingTweet)
+    // tweets.push(existingTweet)
 
     res.status(200).json(tweets)
 })
