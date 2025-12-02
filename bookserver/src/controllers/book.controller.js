@@ -94,9 +94,31 @@ const deleteBook = async (req, res) => {
     })
 }
 
+const filterBooksByCategory = async (req, res) => {
+    const { category } = req.query;
+
+    if(!category){
+        throw Error("category is required !!")
+    }
+
+    const filteredBooks = await Book.find({category});
+
+    if(!filteredBooks.length){
+        throw Error(`No Books found in ${category} category !!`)
+    }
+
+    return res.status(200).json({
+        status: 200,
+        message: "Books filtered successfully",
+        books: filteredBooks
+    })
+
+}
+
 export {
     addBook,
     updateBook,
     deleteBook,
     getAllBooks,
+    filterBooksByCategory
 }
