@@ -1,7 +1,7 @@
 # 📚 Book Management API
 
 A **RESTful API** to manage books using **Node.js, Express, and MongoDB (Mongoose)**.
-Supports **CRUD operations** — Create, Read, Update, and Delete books — with validation and a global error handler.
+Supports **CRUD operations** with proper validation and a global error handler.
 
 ---
 
@@ -20,13 +20,13 @@ Supports **CRUD operations** — Create, Read, Update, and Delete books — with
 
 ```
 src/
-├─ app.js                 # Express app setup
-├─ server.js              # Entry point, dotenv config, MongoDB connection
-├─ db/db.js               # MongoDB connection
-├─ routes/book.route.js   # Book routes
-├─ controllers/book.controller.js # Book CRUD logic
-├─ models/book.model.js   # Book schema
-└─ middleware/errorHandler.js     # Global error handler
+├─ app.js                        # Express app setup
+├─ server.js                     # Entry point, dotenv config, MongoDB connection
+├─ db/db.js                      # MongoDB connection
+├─ routes/book.route.js          # Book routes
+├─ controllers/book.controller.js# Book CRUD logic
+├─ models/book.model.js          # Book schema
+└─ middleware/errorHandler.js    # Global error handler
 ```
 
 ---
@@ -46,7 +46,7 @@ cd <repo-folder>
 npm install
 ```
 
-3. Add a `.env` file in the root directory with the required environment variables:
+3. Add a `.env` file in the root directory:
 
 ```
 PORT=5000
@@ -55,7 +55,7 @@ MONGODB_URI=<your-mongodb-uri>
 CORS_ORIGIN=*
 ```
 
-> Replace `<your-mongodb-uri>` with your MongoDB connection string.
+> Replace `<your-mongodb-uri>` with your actual MongoDB connection string.
 
 ---
 
@@ -65,8 +65,8 @@ CORS_ORIGIN=*
 npm run dev
 ```
 
-The server will run on the port defined in `.env` (default `5000`).
-Ensure MongoDB is running locally or your Atlas cluster is accessible.
+The server runs on the port defined in `.env` (default: `5000`).
+Make sure your MongoDB instance or Atlas cluster is accessible.
 
 ---
 
@@ -76,19 +76,31 @@ Ensure MongoDB is running locally or your Atlas cluster is accessible.
 
 * **GET /** – Fetch all books
 * **POST /create** – Add a new book
-* **PATCH /update/:bookId** – Update an existing book
+* **PATCH /update/:bookId** – Update book details
 * **DELETE /delete/:bookId** – Delete a book
+
+---
+
+## 📩 Postman Request Demo
+
+You can view and test the API using the Postman request collection shared below:
+
+👉 **Postman Demo Link:** *[link](https://drive.google.com/file/d/1FT6ntIz3hMQoAAuSvXoxIv6NQlUAfW6f/view?usp=sharing)*
+
+This helps others quickly understand how each API route works.
 
 ---
 
 ## 💡 Notes
 
-* The API uses a **global error handler** to return consistent error responses.
-* Basic validation ensures all required fields are provided for CRUD operations.
-* CORS is configured to allow requests from the origin defined in the `.env` file.
+* A global error handler ensures consistent responses across the API.
+* Input validation ensures required fields are provided.
+* CORS is configured using the origin defined in `.env`.
 
 ---
 
 ## 👨‍💻 Author
 
-**Rajendra Behera** – [GitHub](https://github.com/BRajendra10) | [LinkedIn](https://www.linkedin.com/in/behera-rajendra/)
+**Rajendra Behera**
+[GitHub](https://github.com/BRajendra10) • [LinkedIn](https://www.linkedin.com/in/behera-rajendra/)
+
