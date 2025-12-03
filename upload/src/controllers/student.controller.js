@@ -153,7 +153,7 @@ const deleteStudent = async (req, res) => {
         return res.status(200).json({
             status: 200,
             message: "Student deleted successfully",
-            student: {deletedStudent}
+            student: {}
         });
 
     } catch (error) {
