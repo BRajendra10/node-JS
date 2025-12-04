@@ -155,6 +155,14 @@ name, age, email, phone, profileImage?
 
 ---
 
+## 📩 Postman Request Demo
+
+You can view and test the API using the Postman request collection shared below:
+
+👉 **Postman Demo Link:** *[link](https://drive.google.com/file/d/1DiLaPJo3RfBNXiausL_ziC9G10hRBLZn/view?usp=sharing)*
+
+---
+
 ## 🧪 Testing
 
 You can test endpoints using:
