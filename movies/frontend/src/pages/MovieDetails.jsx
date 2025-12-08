@@ -41,9 +41,9 @@ export default function MovieDetails() {
 
 
             <div className="flex gap-3 mt-4">
-                <Link
-                    to={`/edit/${movie._id}`}
-                    className="px-4 py-2 bg-green-600 text-white rounded"
+                <Link 
+                    to={`/movie/${movie._id}/edit`} 
+                    className="px-3 py-1 bg-green-500 text-white rounded"
                 >
                     Edit
                 </Link>

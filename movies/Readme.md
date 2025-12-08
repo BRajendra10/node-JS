@@ -168,6 +168,14 @@ The global handler converts it into clean JSON.
 
 ---
 
+## 📩 Postman Request Demo
+
+You can view and test the API using the Postman request collection shared below:
+
+👉 **Postman Demo Link:** *[link](https://drive.google.com/file/d/1L7SHbFDsXlhE4x2chs4bUjianqgz8Cpt/view?usp=sharing)*
+
+---
+
 ## 🗑️ Delete Flow (with Cloudinary)
 
 * Delete old poster from Cloudinary
